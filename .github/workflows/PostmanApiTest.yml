@@ -36,7 +36,7 @@ jobs:
 
       - name: Run Postman collection
         run: |
-          newman run Task-List-application.postman_collection.json -e Task-manager-API.postman_environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme
+          newman run Task-List-application.postman_collection.json -e Task-manager-API.postman_environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme  > testResults/runreport1.html
 
       - name: Output the run Details
         uses: actions/upload-artifact@v2
